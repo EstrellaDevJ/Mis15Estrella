@@ -341,6 +341,31 @@ section p {
 	text-transform: uppercase;
 }
 
+#1 .espacio_btn {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+#1 .btn {
+	max-width: min(90%, 640px);
+	white-space: normal;
+	text-align: center;
+	line-height: 1.35;
+}
+
+@media (max-width: 1100px) {
+	#1 .espacio_btn {
+		flex: 0 0 auto;
+		margin-top: 0.8rem;
+	}
+
+	#1 .btn {
+		font-size: clamp(14px, 2.2vw, 21px);
+		padding: 12px 20px;
+	}
+}
+
 .btn:hover {
 	color: var(--gold);
 	background-color: white;
